@@ -7,6 +7,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { LoaderComponent } from './layout/loader/loader.component';
 import { SearchBarComponent } from './layout/search-bar/search-bar.component';
 import { NotFoundComponent } from './layout/not-found/not-found.component';
+import { WeatherComponent } from './weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NotFoundComponent } from './layout/not-found/not-found.component';
     HeaderComponent,
     LoaderComponent,
     SearchBarComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
