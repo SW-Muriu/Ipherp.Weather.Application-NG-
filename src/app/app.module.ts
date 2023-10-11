@@ -8,6 +8,7 @@ import { LoaderComponent } from './layout/loader/loader.component';
 import { SearchBarComponent } from './layout/search-bar/search-bar.component';
 import { NotFoundComponent } from './layout/not-found/not-found.component';
 import { WeatherComponent } from './weather/weather.component';
+import { CityCardComponent } from './springboard/city-card/city-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { WeatherComponent } from './weather/weather.component';
     LoaderComponent,
     SearchBarComponent,
     NotFoundComponent,
-    WeatherComponent
+    WeatherComponent,
+    CityCardComponent
   ],
   imports: [
     BrowserModule,
