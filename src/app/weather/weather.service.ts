@@ -10,8 +10,7 @@ import { Weather } from './weather';
 import { apiConfig, appConfig } from '../config';
 // import { catchError, map, startWith, switchMap } from 'rxjs/operators';
 
-import 'rxjs/add/operator/catch';
-import 'rxjs/Rx';
+
 
 @Injectable({
   providedIn: 'root'

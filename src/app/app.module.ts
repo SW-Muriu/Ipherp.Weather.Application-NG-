@@ -9,6 +9,8 @@ import { SearchBarComponent } from './layout/search-bar/search-bar.component';
 import { NotFoundComponent } from './layout/not-found/not-found.component';
 import { WeatherComponent } from './weather/weather.component';
 import { CityCardComponent } from './springboard/city-card/city-card.component';
+import { DateComponent } from './springboard/date/date.component';
+import { ClockComponent } from './springboard/clock/clock.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CityCardComponent } from './springboard/city-card/city-card.component';
     SearchBarComponent,
     NotFoundComponent,
     WeatherComponent,
-    CityCardComponent
+    CityCardComponent,
+    DateComponent,
+    ClockComponent
   ],
   imports: [
     BrowserModule,

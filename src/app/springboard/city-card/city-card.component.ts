@@ -1,4 +1,5 @@
 import { Component, Input, Output } from '@angular/core';
+import { apiConfig } from 'src/app/config';
 import { Weather } from 'src/app/weather/weather';
 
 @Component({
@@ -8,6 +9,20 @@ import { Weather } from 'src/app/weather/weather';
 })
 export class CityCardComponent {
   @Input() weather!: Weather;
-  @Output() unitSystem: string | undefined; 
+  @Output()  unitSystem!: string | number; 
+
+  measureOfTemp!: string;
+  measureOfWindSpeed!: string; 
+  measureOfPressure!: string; 
+
+
+  ngOnInit(){
+    // const measurementUnits = apiConfig.measurementUnits[this.unitSystem]; 
+    const measurementUnits = apiConfig.measurementUnits["metric"]; 
+
+    this.measureOfTemp = measurementUnits.temperature; 
+    this.measureOfWindSpeed = measurementUnits.windSpeed;
+    this.measureOfPressure = measurementUnits.pressure
+  }
 
 }
